@@ -23,6 +23,7 @@ void view_directory(const std::experimental::filesystem::path& path)
 }
 int main(int argc, char** argv)
 {
+
 	view_directory(std::experimental::filesystem::current_path());
 
 	system("pause");
