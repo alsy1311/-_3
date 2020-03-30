@@ -17,8 +17,8 @@ void view_directory(const std::experimental::filesystem::path& path)
 	}
 	auto ftime = std::experimental::filesystem::last_write_time(path);
 	std::time_t cftime = decltype (ftime) ::clock::to_time_t(ftime);
-#pragma warning(suppress : 4996) std::cout << "Время записи файла" << std::asctime(std::localtime(&cftime)) << ' \ n ';
-
+#pragma warning(suppress : 4996)
+	std::cout << "Time of changes " << std::asctime(std::localtime(&cftime)) << ' \ n ';
 
 }
 int main(int argc, char** argv)
